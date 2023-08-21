@@ -1,6 +1,5 @@
 import React,{useEffect, useState} from 'react';
 import { NavLink } from 'react-router-dom';
-import good from './good.jpg'
 export default function Home() {
   const [chosenWord, setChosenWord] = useState("");
   const [index, setIndex] = useState(0);

@@ -8,7 +8,7 @@ export default function Services() {
           <p className=" section-info">- SERVICES</p>
           <div className="w-100 flex-wrap gap-3 d-flex justify-content-between align-items-center">
             <h4 className=" my-3">My Services</h4>
-            <NavLink className="" to="">
+            <NavLink className="" to="mailto:ahmed.hahmed@hdb-egy.com">
               ahmed.hahmed@hdb-egy.com
             </NavLink>
           </div>
