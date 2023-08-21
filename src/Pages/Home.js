@@ -26,7 +26,7 @@ export default function Home() {
         <div className="row align-items-sm-center flex-column-reverse  flex-md-row ">
           <div className="col-12 col-md-6">
             <h1>
-              Hi, I'm <span>Mohamed</span>! Creative
+              Hi, I'm <span>Ahmed</span>! Creative
               <span>
                 <b className="test d-block">{chosenWord}</b>
               </span>
