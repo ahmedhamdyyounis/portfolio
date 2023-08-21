@@ -27,6 +27,7 @@ export default function Portfolio() {
     {
         id:1,
         imgUrl:'vanlife.png',
+        imgAlt:'vanlife project',
         projectName:'Vanlife',
         content:'The van life app is an online platform where users can easily find and reserve their preferred van, tailored to their individual preferences. ',/*With built-in filtering options, users can quickly narrow down their search and make hassle-free bookings. */
         technologies:['React','Bootstrap'],
@@ -37,6 +38,7 @@ export default function Portfolio() {
       {
         id:2,
         imgUrl:'taskaya.png',
+        imgAlt:'taskaya project',
         projectName:'Taskaya',
         content:'Taskaya is a task management application that empowers users to effectively handle their tasks. ',
         technologies:['React','CSS'],
@@ -47,6 +49,7 @@ export default function Portfolio() {
       {
         id:3,
         imgUrl:'appie.png',
+        imgAlt:'appie project',
         projectName:'Appie',
         content:'Taskaya is a task management application that empowers users to effectively handle their tasks. ',/*With its advanced features, users can easily filter, modify, and add tasks. Taskaya also provides a comprehensive task count and history track feature, enabling users to monitor their progress. Additionally, users can utilize the search filtering functionality to quickly locate specific tasks. */
         technologies:['Javascript', 'CSS'],
@@ -57,6 +60,7 @@ export default function Portfolio() {
       {
         id:4,
         imgUrl:'origami.png',
+        imgAlt:'origami project',
         projectName:'Origami',
         content:'origami is a simple landing page to showcase the business ability to improve businesses',
         technologies:['Javascript','CSS'],
@@ -66,10 +70,10 @@ export default function Portfolio() {
       }
 
     ]
-    const AllCards = cardsInfo.map(({id,imgUrl,projectName,content,technologies,codeUrl,demoUrl}) => (
-      <div key={id} className="item col-2 w-50 ">
+    const AllCards = cardsInfo.map(({id,imgUrl,projectName,content,technologies,codeUrl,demoUrl,imgAlt}) => (
+      <div key={id} className="item col-2 w-50 d-flex flex-column ">
       <div className='item-img-wrapper mb-3'>
-    <img src={imgUrl} className="img-fluid mb-3" alt="" />
+    <img src={imgUrl} className="img-fluid mb-3" alt={imgAlt} />
       </div>
     <h5>{projectName}</h5>
     <p>{content}</p>

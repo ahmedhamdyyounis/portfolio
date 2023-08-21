@@ -44,7 +44,7 @@ export default function Sidebar() {
     <aside className="cut bg-white position-fixed border d-none d-sm-block px-4 py-2 text-center h-100">
       <div className="profile-picture-wrapper d-flex justify-content-center  ">
         <div className="overflow-hidden reserved border border-2 rounded-circle ">
-          <img className='img-fluid' src='mini-two.jpeg' />
+          <img className='img-fluid' alt='Ahmed' src='mini-two.jpeg' />
         </div>
       </div>
       <div className="dot name position-relative mb-5">

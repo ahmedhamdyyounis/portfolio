@@ -31,7 +31,7 @@ export default function Header() {
         className="side-sub-menu d-flex flex-column align-items-end justify-content-start position-fixed vh-100 me-3 bg-white px-4 py-5"
       >
         <div className="border border-3  img-wrapper mb-3 overflow-hidden rounded-circle">
-          <img src='mini-two.jpeg' className='img-fluid'/>
+          <img src='mini-two.jpeg' alt='Ahmed' className='img-fluid'/>
         </div>
         <ul className="list-unstyled d-flex flex-column gap-3 my-5">
           <li className="text-end">

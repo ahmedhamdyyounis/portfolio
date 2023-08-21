@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 export default function Contact() {
   const [form, setForm] = useState({
     firstname: '',
@@ -12,10 +11,7 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log(form);
-  }
+ 
   return (
     <section className="contact">
       <div className="container layout w-lg-100 min-vh-100 overflow-hidden">
@@ -29,13 +25,13 @@ export default function Contact() {
 </p>
             <ul className="list-unstyled">
               <li>
-                <a href=""></a>+201278072216
+                <p>+201278072216</p>
               </li>
               <li>
-                <a href=""></a>ahmed.hahmed@gmail.com
+                <p>ahmed.hahmed@gmail.com</p>
               </li>
               <li>
-                <a href=""></a>Alexandria
+                <p>Alexandria</p>
               </li>
             </ul>
           </div>
