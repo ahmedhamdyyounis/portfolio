@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import Appie from '../media/appie.png'
+import Vanlife from '../media/vanlife.png'
+import Taskaya from '../media/taskaya.png'
+import Origami from '../media/origami.png'
 export default function Portfolio() {
   const [percentage, setPercentage] = useState(0);
   const [pixel, setPixel] = useState(0);
@@ -26,7 +30,7 @@ export default function Portfolio() {
   const cardsInfo = [
     {
         id:1,
-        imgUrl:'vanlife.png',
+        imgUrl:Vanlife,
         imgAlt:'vanlife project',
         projectName:'Vanlife',
         content:'The van life app is an online platform where users can easily find and reserve their preferred van, tailored to their individual preferences. ',/*With built-in filtering options, users can quickly narrow down their search and make hassle-free bookings. */
@@ -37,7 +41,7 @@ export default function Portfolio() {
       },
       {
         id:2,
-        imgUrl:'taskaya.png',
+        imgUrl:Taskaya,
         imgAlt:'taskaya project',
         projectName:'Taskaya',
         content:'Taskaya is a task management application that empowers users to effectively handle their tasks. ',
@@ -48,7 +52,7 @@ export default function Portfolio() {
       },
       {
         id:3,
-        imgUrl:'appie.png',
+        imgUrl:Appie,
         imgAlt:'appie project',
         projectName:'Appie',
         content:'Taskaya is a task management application that empowers users to effectively handle their tasks. ',/*With its advanced features, users can easily filter, modify, and add tasks. Taskaya also provides a comprehensive task count and history track feature, enabling users to monitor their progress. Additionally, users can utilize the search filtering functionality to quickly locate specific tasks. */
@@ -59,7 +63,7 @@ export default function Portfolio() {
       },
       {
         id:4,
-        imgUrl:'origami.png',
+        imgUrl:Origami,
         imgAlt:'origami project',
         projectName:'Origami',
         content:'origami is a simple landing page to showcase the business ability to improve businesses',
@@ -77,6 +81,7 @@ export default function Portfolio() {
       </div>
     <h5>{projectName}</h5>
     <p>{content}</p>
+    <div className='mt-auto'>
     <div className='technologies d-flex gap-3'>
       {technologies.map(tech => <p>{tech}</p>)}
     </div>
@@ -93,6 +98,7 @@ export default function Portfolio() {
           <p className='mb-0'>Live Demo</p>
           <i className="fa-solid fa-right-from-bracket"></i>
         </NavLink>
+    </div>
     </div>
   </div>
 

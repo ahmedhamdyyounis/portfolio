@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import { NavLink } from 'react-router-dom';
+import myImage from '../media/home.jpg'
 export default function Home() {
   const [chosenWord, setChosenWord] = useState("");
   const [index, setIndex] = useState(0);
@@ -54,7 +55,7 @@ export default function Home() {
           </div>
           <div className="col-12 col-sm-6">
             <div className="water-effect img-wrapper text-center  overflow-hidden border border-3 ">
-              <img className="img-fluid " src="../public/good.jpg" alt="ahmed image" />
+              <img className="img-fluid " src={myImage} alt="ahmed image" />
             </div>
           </div>
         </div>
